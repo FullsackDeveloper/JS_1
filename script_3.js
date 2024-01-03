@@ -171,7 +171,17 @@ const circle = {
 //                            yozilayotgann kodning xotiradan kamroq joy egallashini ta'minlash)
 
 
+// AMALIY MASHG'ULOT 
 
+function Laptop() {
+    this.cpu = cpu,
+    this.ram = ram,
+    this.storage = storage,
+    this.screenSize = screenSize,
+    this.brand = brand,
+    this.powerOn = function(){   }  
+}
+let laptop = new Laptop('RYZEN 5','8GB','2TB','16','HP');
 
 
 
