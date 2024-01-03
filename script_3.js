@@ -72,8 +72,108 @@
 
 // // // // // // // // // // // // // // // // // // // / / / //  //  //
 
-function Constructor(radius) {
-        this.raduis = radius,
-        console.log(Constructor.toString());
+// function Constructor(radius) {
+//         this.raduis = radius,
+//         console.log(Constructor.toString());
+//     }
+//     const circle_2 = new Constructor(3);
+
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+
+
+//  value(primitive) va reference(objects) type lar
+// primitive ==> Number, String, Boolean, Undefined, Null, Symbol
+// objects ==> Objact, Function, Array 
+
+//  primitive lardan nusxa olinganda , ularni aynan qiymatidan nusxa olinadi. Bu narsa (MyValue) deyiladi.
+// let a = 5;
+// let b = 6;     
+// a=10;
+// console.log(a,b);
+// objects dan nusxa olinganda esa , ularni Ko'rsatkichidan nusxa olinadi. Bu narsa (MyReference) deyiladi.
+// let x = {value: 10};
+// let y = x;
+// y.value = 20;
+// console.log(x, y);
+
+// //  primitive 
+// let number = 3;
+// function increase(number) {
+//     number++;
+//     console.log('inside: ', number);    
+// }
+// increase(number);
+// console.log('outside: ', number);
+
+// // objects
+// let obj = {value: 1};
+// function increase(obj) {
+//     obj.value++;
+//     console.log('inside: ',obj);
+// }
+// increase(obj);
+// console.log('outside: ', obj);
+
+
+// MAVZU: OBJECT ni xossalari bo'ylab yurib chiqish 
+// const circle = {
+//     radius: 1,
+//     draw() {
+//         console.log('doira');
+//     }
+// };
+
+// // for (let key in circle)
+// //    console.log(key, circle[key]);
+
+// for (let key of Object.keys(circle))    
+//    console.log(key);
+// // Object.keys ==> Obyektni xossalarini chiqarib beradi
+//    for (let entry of Object.entries(circle))    
+//    console.log(entry);
+// // Object.entries ==> massivdan tashkil topgan massivni qaytarib beradi
+
+
+// // Objectda biror xossani mavjudligini tekshirish uchun in operatoridan foydalaniladi.
+
+// if ('radius' in circle) console.log("bor");
+
+
+
+// MAVZU: OBJECT DAN KLON OLISHni o'rganamiz
+
+// 1-usul: (Eskicha usul)
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('doira');
     }
-    const circle_2 = new Constructor(3);
+};
+// const clone = {};
+
+// for(let key in circle)
+// clone[key] = circle[key];
+// console.log(clone)
+ 
+// 2-usul(yangi usul)
+
+// const clone = Object.assign({}, circle);
+// console.log(clone);
+
+// 3-usul(nisbatan yangiroq usul)
+// sprite operatorini ishlatish
+// const clone = { ...circle};
+// console.log(clone);
+
+
+// MAVZU: XOTIRANI BOSHQARISH(yozilayotgan kodning ishlashi va sifatini yaxshilash, 
+//                            yozilayotgann kodning xotiradan kamroq joy egallashini ta'minlash)
+
+
+
+
+
+
+
+
