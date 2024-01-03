@@ -181,7 +181,7 @@ function Laptop() {
     this.brand = brand,
     this.powerOn = function(){   }  
 }
-let laptop = new Laptop('RYZEN 5','8GB','2TB','16','HP');
+Laptop('RYZEN 5','8GB','2TB','16','HP');
 
 
 
