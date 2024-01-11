@@ -173,7 +173,7 @@ const circle = {
 
 // AMALIY MASHG'ULOT 
 
-function Laptop() {
+function Laptop(cpu,ram,storage,screenSize,brand) {
     this.cpu = cpu,
     this.ram = ram,
     this.storage = storage,
@@ -181,8 +181,8 @@ function Laptop() {
     this.brand = brand,
     this.powerOn = function(){   }  
 }
-Laptop('RYZEN 5','8GB','2TB','16','HP');
-
+let information = new Laptop('RYZEN 5','8GB','2TB','16','HP');
+console.log(information);
 
 
 
